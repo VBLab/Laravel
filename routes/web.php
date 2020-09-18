@@ -81,5 +81,9 @@ use Illuminate\Support\Facades\Route;
 // Route::post('contact', 'ContactController@store');
 
 // Pour formulaire envoie et reception photo
-Route::get('photo', 'PhotoController@create');
-Route::post('photo', 'PhotoController@store');
+// Route::get('photo', 'PhotoController@create');
+// Route::post('photo', 'PhotoController@store');
+
+// Route pour intraction BDD
+Route::get('contact', 'ContactsController@create')->name('contact.create');
+Route::post('contact', 'ContactsController@store')->name('contact.store');
